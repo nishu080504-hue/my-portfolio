@@ -808,32 +808,49 @@ textarea {
 }
 
 
-/* EDUCATION */
+#education{
+  padding: 80px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-title{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.education-container{
+  width: 100%;
+  max-width: 1100px;
+}
 
 .education-card{
   display: flex;
   gap: 25px;
+  align-items: flex-start;
   background: linear-gradient(135deg, #0f172a, #1e3a8a);
-  padding: 25px;
+  padding: 30px;
   border-radius: 20px;
-  transition: 0.3s;
-}
-
-.education-card:hover{
-  transform: translateY(-5px);
+  margin-bottom: 25px;
 }
 
 /* Mobile Responsive */
 @media(max-width:768px){
 
-  .education-card{
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-  }
-
   .education-title{
     font-size: 2rem;
+  }
+
+  .education-card{
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .edu-year{
+    min-width: 100%;
   }
 
   .edu-content h3{
@@ -842,14 +859,9 @@ textarea {
 
   .edu-content p{
     font-size: 14px;
-  }
-
-  .edu-tags span{
-    font-size: 12px;
-    padding: 6px 12px;
+    line-height: 1.6;
   }
 }
-
 
 
 
